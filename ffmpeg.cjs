@@ -7,6 +7,7 @@ const fs = require('fs');
 const app = express();
 const port = 80;
 
+app.use("/public",express.static(path.join(__dirname,"public")));
 // Configuração do Multer para armazenamento temporário
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {

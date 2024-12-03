@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload e Conversão de M4A</title>
+</head>
+<body>
+    <h1>Enviar Arquivo M4A para Conversão</h1>
+    <form action="http://localhost:3000/convert" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="audio/mp4" required />
+        <button type="submit">Enviar e Converter</button>
+    </form>
+</body>
+</html>
