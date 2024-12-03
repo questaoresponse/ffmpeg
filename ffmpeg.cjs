@@ -52,7 +52,8 @@ app.post('/convert', upload.single('file'), (req, res) => {
 
 // Rota para verificar o status do servidor
 app.get('/', (req, res) => {
-    res.send('Servidor Express está rodando.');
+    res.sendFile(__dirname+"/public/index.html");
+    // res.send('Servidor Express está rodando.');
 });
 
 // Inicia o servidor
